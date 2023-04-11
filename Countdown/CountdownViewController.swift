@@ -49,6 +49,10 @@ class CountdownViewController: UIViewController {
     
     private func showAlert() {
         
+        let alert = UIAlertController(title: "Timer Finished :)", message: "Your countdown is over!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Oki, thx", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+        
     }
     
     private func updateViews() {
